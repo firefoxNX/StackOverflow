@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0                                http://maven.apache.org/maven-v4_0_0.xsd">
-    <parent>
-        <artifactId>JodaTimeTest</artifactId>
-        <groupId>JodaTimeTest</groupId>
-        <version>1.0</version>
-    </parent>
     <modelVersion>4.0.0</modelVersion>
+    <groupId>AndroidTest</groupId>
+    <version>1.0</version>
     <artifactId>AndroidTest</artifactId>
     <packaging>apk</packaging>
     <name>Android Quick Start</name>
@@ -15,7 +12,7 @@
     <properties>
         <outputDirectory>target/classes</outputDirectory>
         <!-- Path to the sdk in the file system -->
-        <sdkPath>/Applications/android-sdk-macosx</sdkPath>
+        <sdkPath>c:/android/android-sdk</sdkPath>
     </properties>
 
     <repositories>
@@ -53,7 +50,7 @@ GOOGLE MAPS DEPENDENCY
     <build>
         <finalName>${project.artifactId}</finalName>
         <sourceDirectory>src/main/java</sourceDirectory>
-        <testSourceDirectory>src/test/java</testSourceDirectory>
+        <!--<testSourceDirectory>src/test/java</testSourceDirectory>-->
         <resources>
             <resource>
                 <directory>res</directory>
@@ -68,7 +65,7 @@ GOOGLE MAPS DEPENDENCY
                 <configuration>
                     <sdk>
                         <path>${sdkPath}</path>
-                        <platform>2.2</platform>
+                        <platform>4.0.3</platform>
                     </sdk>
                     <deleteConflictingFiles>true</deleteConflictingFiles>
                     <androidManifestFile>${project.basedir}/AndroidManifest.xml</androidManifestFile>

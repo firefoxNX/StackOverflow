@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidTest/AndroidTest.iml" filepath="$PROJECT_DIR$/AndroidTest/AndroidTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/JodaTime/JodaTime.iml" filepath="$PROJECT_DIR$/JodaTime/JodaTime.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Reflection/Reflection.iml" filepath="$PROJECT_DIR$/Reflection/Reflection.iml" />
       <module fileurl="file://$PROJECT_DIR$/iText/iText.iml" filepath="$PROJECT_DIR$/iText/iText.iml" />
     </modules>
   </component>
