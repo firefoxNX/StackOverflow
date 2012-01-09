@@ -1,9 +1,9 @@
 package iTextTest;
 
-import com.itextpdf.text.*;
-import com.itextpdf.text.pdf.PdfAnnotation;
-import com.itextpdf.text.pdf.PdfAppearance;
-import com.itextpdf.text.pdf.PdfFormField;
+import com.itextpdf.text.Chunk;
+import com.itextpdf.text.Document;
+import com.itextpdf.text.DocumentException;
+import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.pdf.PdfWriter;
 
 import java.io.FileOutputStream;
@@ -20,7 +20,7 @@ public class App {
 //            new Font(Font.FontFamily.TIMES_ROMAN, 12, Font.BOLD | Font.UNDERLINE);
 
     public static void main(String[] args) throws IOException, DocumentException {
-        new App().createPdf("HelloWorld.pdf");
+        new App().createPdf("./iText/HelloWorld.pdf");
     }
 
     public void createPdf(String filename)

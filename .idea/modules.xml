@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidTest/AndroidTest.iml" filepath="$PROJECT_DIR$/AndroidTest/AndroidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AndroidTwitter/AndroidTwitter.iml" filepath="$PROJECT_DIR$/AndroidTwitter/AndroidTwitter.iml" />
+      <module fileurl="file://$USER_HOME$/Downloads/ddewaele-AndroidTwitterGoogleApiJavaClient-58c4646/AndroidTwitterGoogleApiJavaClient.iml" filepath="$USER_HOME$/Downloads/ddewaele-AndroidTwitterGoogleApiJavaClient-58c4646/AndroidTwitterGoogleApiJavaClient.iml" />
       <module fileurl="file://$PROJECT_DIR$/JodaTime/JodaTime.iml" filepath="$PROJECT_DIR$/JodaTime/JodaTime.iml" />
+      <module fileurl="file://$PROJECT_DIR$/POITest/POITest.iml" filepath="$PROJECT_DIR$/POITest/POITest.iml" />
       <module fileurl="file://$PROJECT_DIR$/Reflection/Reflection.iml" filepath="$PROJECT_DIR$/Reflection/Reflection.iml" />
       <module fileurl="file://$PROJECT_DIR$/iText/iText.iml" filepath="$PROJECT_DIR$/iText/iText.iml" />
     </modules>

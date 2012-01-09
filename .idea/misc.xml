@@ -5,6 +5,7 @@
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="android" url="file://$PROJECT_DIR$/AndroidTest" />
+    <file type="web" url="file://$PROJECT_DIR$/ActiveMQ/web" />
   </component>
   <component name="IdProvider" IDEtalkID="A55370B43CF593FC8176166D90F177D2" />
   <component name="MavenProjectsManager">
@@ -16,6 +17,9 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/ActiveMQ/core/pom.xml" />
+        <option value="$PROJECT_DIR$/ActiveMQ/pom.xml" />
+        <option value="$PROJECT_DIR$/ActiveMQ/web/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
       </set>
     </option>

@@ -12,7 +12,7 @@
     <properties>
         <outputDirectory>target/classes</outputDirectory>
         <!-- Path to the sdk in the file system -->
-        <sdkPath>c:/android/android-sdk</sdkPath>
+        <sdkPath>/Applications/android-sdk-macosx</sdkPath>
     </properties>
 
     <repositories>
@@ -61,7 +61,7 @@ GOOGLE MAPS DEPENDENCY
             <plugin>
                 <groupId>com.jayway.maven.plugins.android.generation2</groupId>
                 <artifactId>maven-android-plugin</artifactId>
-                <version>2.6.0</version>
+                <version>2.8.1</version>
                 <configuration>
                     <sdk>
                         <path>${sdkPath}</path>
