@@ -12,6 +12,7 @@
         <module>AndroidTest</module>
     <module>ActiveMQ</module>
         <module>POITest</module>
+        <module>JAXBTest</module>
     </modules>
     
 </project>
