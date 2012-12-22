@@ -1,0 +1,141 @@
+﻿<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+	<wsdl:types>
+		<s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+			<s:element name="getName">
+				<s:complexType/>
+			</s:element>
+			<s:element name="getNameResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="0" maxOccurs="1" name="getNameResult" type="s:string"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="addPackage">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1" maxOccurs="1" name="package" nillable="true" type="tns:Pack"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:complexType name="Pack"/>
+			<s:element name="addPackageResponse">
+				<s:complexType/>
+			</s:element>
+			<s:element name="getPackage">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1" maxOccurs="1" name="id" type="s:int"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+			<s:element name="getPackageResponse">
+				<s:complexType>
+					<s:sequence>
+						<s:element minOccurs="1" maxOccurs="1" name="getPackageResult" nillable="true" type="tns:Pack"/>
+					</s:sequence>
+				</s:complexType>
+			</s:element>
+		</s:schema>
+	</wsdl:types>
+	<wsdl:message name="getNameSoapIn">
+		<wsdl:part name="parameters" element="tns:getName"/>
+	</wsdl:message>
+	<wsdl:message name="getNameSoapOut">
+		<wsdl:part name="parameters" element="tns:getNameResponse"/>
+	</wsdl:message>
+	<wsdl:message name="addPackageSoapIn">
+		<wsdl:part name="parameters" element="tns:addPackage"/>
+	</wsdl:message>
+	<wsdl:message name="addPackageSoapOut">
+		<wsdl:part name="parameters" element="tns:addPackageResponse"/>
+	</wsdl:message>
+	<wsdl:message name="getPackageSoapIn">
+		<wsdl:part name="parameters" element="tns:getPackage"/>
+	</wsdl:message>
+	<wsdl:message name="getPackageSoapOut">
+		<wsdl:part name="parameters" element="tns:getPackageResponse"/>
+	</wsdl:message>
+	<wsdl:portType name="PackWSSoap">
+		<wsdl:operation name="getName">
+			<wsdl:input message="tns:getNameSoapIn"/>
+			<wsdl:output message="tns:getNameSoapOut"/>
+		</wsdl:operation>
+		<wsdl:operation name="addPackage">
+			<wsdl:input message="tns:addPackageSoapIn"/>
+			<wsdl:output message="tns:addPackageSoapOut"/>
+		</wsdl:operation>
+		<wsdl:operation name="getPackage">
+			<wsdl:input message="tns:getPackageSoapIn"/>
+			<wsdl:output message="tns:getPackageSoapOut"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="PackWSSoap" type="tns:PackWSSoap">
+		<soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="getName">
+			<soap:operation soapAction="http://tempuri.org/getName" style="document"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="addPackage">
+			<soap:operation soapAction="http://tempuri.org/addPackage" style="document"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="getPackage">
+			<soap:operation soapAction="http://tempuri.org/getPackage" style="document"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:binding name="PackWSSoap12" type="tns:PackWSSoap">
+		<soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="getName">
+			<soap12:operation soapAction="http://tempuri.org/getName" style="document"/>
+			<wsdl:input>
+				<soap12:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap12:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="addPackage">
+			<soap12:operation soapAction="http://tempuri.org/addPackage" style="document"/>
+			<wsdl:input>
+				<soap12:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap12:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="getPackage">
+			<soap12:operation soapAction="http://tempuri.org/getPackage" style="document"/>
+			<wsdl:input>
+				<soap12:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap12:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="PackWS">
+		<wsdl:port name="PackWSSoap" binding="tns:PackWSSoap">
+			<soap:address location="http://localhost:57265/Service.asmx"/>
+		</wsdl:port>
+		<wsdl:port name="PackWSSoap12" binding="tns:PackWSSoap12">
+			<soap12:address location="http://localhost:57265/Service.asmx"/>
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>
