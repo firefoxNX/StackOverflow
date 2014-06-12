@@ -15,7 +15,7 @@ public class App {
 	public static void main(String[] args) throws Exception {
 		test("job", "-update"); // works fine
 		test("job", "-dryrun"); // works fine
-//		test("job", "-update", "-dryrun"); // doesn't work
+		test("job", "-update", "-dryrun"); // doesn't work
 	}
 
 	public static void test(String... args) throws ParseException {
